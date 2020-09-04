@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: 'http://localhost:3001',
+    origin: 'https://front-des-mod4.herokuapp.com',
   })
 );
 
@@ -33,6 +33,6 @@ app.get('/', (req, res) => {
 
 app.use(gradeRouter);
 
-app.listen(process.env.PORT || 8081, () => {
+app.listen(process.env.PORT || 8080, () => {
   console.log(`Servidor rodando na porta ${process.env.PORT}`);
 });

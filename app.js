@@ -33,6 +33,6 @@ app.get('/', (req, res) => {
 
 app.use(gradeRouter);
 
-app.listen(process.env.PORT || 8080, () => {
+app.listen(process.env.PORT || 8000, () => {
   console.log(`Servidor rodando na porta ${process.env.PORT}`);
 });
